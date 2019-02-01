@@ -21,11 +21,27 @@ Before modifying my code for these franchises, I want to list out my `quality co
 There is a way to localize all the pizza making activities in the pizza store.
 First, lets look into the changes in the `Pizza Store`:
 ```C#
-// PizzaStore is now abstract which will help to control process
-public abstract class PizzaStore {
-    public Pizza OrderPizza(string type){
-        Pizza pizza;
-        pizza = createPizza(type);
+// Making Pizza Store abstract helped me to move our CreatePizza logic
+// to sub classes (NYStylePizzaStore) (ChicagoStylePizzaStore)
+public abstract class PizzaStore
+{
+    public IPizza OrderPizza(string type)
+    {
+        IPizza pizza;
+        pizza = CreatePizza(type);
+
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+        
+        return pizza;
     }
+
+    // All the responsibility for instantiating Pizzas has been moved into
+    // a method that acts as a factory.
+    public abstract IPizza CreatePizza(string type);  // Now this method will create factory.
+
+    // Other methods here
 }
 ```

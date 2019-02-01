@@ -1,12 +1,12 @@
 # Design Patterns
-> Artistic approach for Inheriting Interfaces and Abstract classes
+> Artistic approach for Managing your code.
 
 In software engineering, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
 
 ## Creational design patterns
 These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
 
-> Before jumping into `Factory Method` pattern, I would suggest you to start with `Simple Factory` to have a basic understanding of how we implement `Factory Method` pattern.
+> Before jumping into `Factory Method` pattern, I would suggest you to start with `Simple Factory` to have a basic understanding of how we implement `Factory` pattern.
 
 - [**Factory Method**][1]<br>
   Creates an instance of several derived classes
@@ -79,10 +79,6 @@ Please post your FAQ or comments regarding design patterns [as an issue](https:/
 
 [1]: Creational_FactoryMethod/README.md
 [2]: Creational_AbstractFactory/README.md
-
-## Contributing
-
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## License
 

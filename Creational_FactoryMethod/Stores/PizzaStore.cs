@@ -1,6 +1,6 @@
 using Creational_FactoryMethod.PizzaItems;
 
-namespace Creational_FactoryMethod
+namespace Creational_FactoryMethod.Stores
 {
     public abstract class PizzaStore
     {
