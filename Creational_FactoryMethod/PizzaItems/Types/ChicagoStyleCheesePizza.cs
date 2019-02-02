@@ -1,27 +1,27 @@
 using System;
+using System.Collections.Generic;
 
 namespace Creational_FactoryMethod.PizzaItems.Types
 {
-    public class ChicagoStyleCheesePizza : IPizza
+    public class ChicagoStyleCheesePizza : Pizza
     {
-        public void bake()
+        public override string name { get; set; }
+        public override string dough { get; set; }
+        public override string sauce { get; set; }
+        public override List<string> toppings { get; set; } = new List<string>();
+
+        public ChicagoStyleCheesePizza()
         {
-            Console.WriteLine("Backing Cheese Pizza");
+            name = "Chicago Style Deep Dish Cheese Pizza";
+            dough = "Extra Thick Crust Dough";
+            sauce = "Plum Tomato Sauce";
+
+            toppings.Add("Shredded Mozzarella Cheese");
         }
 
-        public void box()
+        public override void cut()
         {
-            Console.WriteLine("Boxing Cheese Pizza");
-        }
-
-        public void cut()
-        {
-            Console.WriteLine("Cutting Cheese Pizza");
-        }
-
-        public void prepare()
-        {
-            Console.WriteLine("Preparing Cheese Pizza");
+            Console.WriteLine("Cutting the pizza into square slices.");
         }
     }
 }

@@ -45,3 +45,133 @@ public abstract class PizzaStore
     // Other methods here
 }
 ```
+
+> One more thing I want to change in my PizzaStore, I have to change my IPizza Interface to Pizza abstract class, with the help of which I can force the steps required in pizza making process. This abstract class will help my franchises to follow the basic steps mention in this abstract class and can override their step if they want to update the process.
+
+```c#
+public abstract class Pizza
+{
+    public abstract string name { get; set; }
+    public abstract string dough { get; set; }
+    public abstract string sauce { get; set; }
+    public abstract List<string> toppings { get; set; }
+    public virtual void prepare()
+    {
+        Console.WriteLine("Preparing " + name);
+        Console.WriteLine("Tossing dough...");
+        Console.WriteLine("Adding sauce...");
+        Console.WriteLine("Adding toppings: ");
+        foreach (string topping in toppings)
+        {
+            Console.WriteLine(" " + topping);
+        }
+    }
+    public virtual void bake()
+    {
+        Console.WriteLine("Bake for 25 minute at 350.");
+    }
+    public virtual void cut()
+    {
+        Console.WriteLine("Cutting the pizza into diagonal slices.");
+    }
+    public virtual void box()
+    {
+        Console.WriteLine("Place pizza in official PizzaStore box.");
+    }
+    public string getName()
+    {
+        return name;
+    }
+}
+```
+
+> You must be wondering how this will help me, wait for a min and look into some of the pizza class.
+
+```c#
+// My NY Style Sauce and Cheese Pizza
+public class NYStyleCheesePizza : Pizza
+{
+    public override string name { get; set; }
+    public override string dough { get; set; }
+    public override string sauce { get; set; }
+    public override List<string> toppings { get; set; }= new List<string>();
+    public NYStyleCheesePizza()
+    {
+        name = "NY Style Sauce and Cheese Pizza";
+        dough = "Thin Crust Dough";
+        sauce = "Marinara Sauce";
+        toppings.Add("Grated Reggiano Cheese");
+    }
+}
+
+// My Chicago Style Sauce and Cheese Pizza
+public class ChicagoStyleCheesePizza : Pizza
+{
+    public override string name { get; set; }
+    public override string dough { get; set; }
+    public override string sauce { get; set; }
+    public override List<string> toppings { get; set; } = new List<string>();
+    public ChicagoStyleCheesePizza()
+    {
+        name = "Chicago Style Deep Dish Cheese Pizza";
+        dough = "Extra Thick Crust Dough";
+        sauce = "Plum Tomato Sauce";
+        toppings.Add("Shredded Mozzarella Cheese");
+    }
+    public override void cut()
+    {
+        Console.WriteLine("Cutting the pizza into square slices.");
+    }
+}
+```
+
+> In the above implementation you can see the difference from `Simple Factory` to `Factory Method`.
+
+## Usage
+You've waited long enough. Time for some pizzas!
+
+```
+$ cd Creational_FactoryMethod
+$ dotnet build
+$ dotnet run
+Welcome to my Pizza Store!
+Please enter your pizza type from
+(Cheese)(Clam)
+
+Cheese
+
+Preparing NY Style Sauce and Cheese Pizza
+Tossing dough...
+Adding sauce...
+Adding toppings:
+Grated Reggiano Cheese
+
+Bake for 25 minute at 350.
+
+Cutting the pizza into diagonal slices.
+
+Place pizza in official PizzaStore box.
+
+Thank for Ordering Creational_FactoryMethod.PizzaItems.Types.NYStyleCheesePizza please collect your order from front desk in 15 min
+
+Preparing Chicago Style Deep Dish Cheese Pizza
+
+Tossing dough...
+Adding sauce...
+Adding toppings:
+ Shredded Mozzarella Cheese
+
+Bake for 25 minute at 350.
+
+Cutting the pizza into square slices. 
+
+Place pizza in official PizzaStore box.
+Thank for Ordering Creational_FactoryMethod.PizzaItems.Types.ChicagoStyleCheesePizza please collect your order from front desk in 15 min
+```
+
+## Moving Forward
+Hurray! My pizza franchises are thanking me for this great effort that I have put to create my stores.
+
+Now, my stores is going popular and I will look for `Abstract Factory Pattern` to make implement some more compatibility with my Pizza Store.
+
+[Abstract Factory Pattern](../Creational_AbstractFactory/README.md)

@@ -4,9 +4,9 @@ namespace Creational_FactoryMethod.Stores
 {
     public abstract class PizzaStore
     {
-        public IPizza OrderPizza(string type)
+        public Pizza OrderPizza(string type)
         {
-            IPizza pizza;
+            Pizza pizza;
             pizza = CreatePizza(type);
 
             pizza.prepare();
@@ -17,6 +17,6 @@ namespace Creational_FactoryMethod.Stores
             return pizza;
         }
 
-        public abstract IPizza CreatePizza(string type);
+        public abstract Pizza CreatePizza(string type);
     }
 }
