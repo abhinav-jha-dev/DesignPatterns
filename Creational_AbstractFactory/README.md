@@ -1,12 +1,19 @@
-# Creational Pattern
-In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation.
+# Abstract Factory
+`Book Definition`: The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
-## Abstract Factory Pattern
-Creates an instance of several families of classes
+`My Definition`: Abstract factory pattern allows clients(in our case NYStylePizzaFactory) to use an abstract interface to create a set of relative(similar) products(like NYStyleCheesePizza) without actually knowing actual products that are actually produced.
 
-### Concept
+## Problem
+I have a successful Pizza Stores so far but, I received some complaints on the quality of pizza produced by `NYStylePizzaFactory`. After investigating this issue, I found they are using low-quality ingredients for preparing pizza which they acquire from the local market place. This problem leads me to a situation where I need to find a solution to monitor and maintain my quality of ingredients that my franchises use for creating pizzas. So I read my Design Pattern Bible `Head First Design Pattern`.
 
-### Problem
-If an application is to be portable, it needs to encapsulate platform dependencies. These "platforms" might include: windowing system, operating system, database, etc. Too often, this encapsulation is not engineered in advance, and lots of #ifdef case statements with options for all currently supported platforms begin to procreate like rabbits throughout the code.
+So I found my solution with `Abstract Factory Pattern` this helped me to create an `Ingredients Factory` that will provide the ingredients for `NYStylePizzaFactory` and `ChicagoStylePizzaFactory`. Which I have implemented later in this article.
 
-### Solution
+## Solution
+That's fairly complicated class diagram to draw; let's look at it all in terms of our PizzaStore:
+<img src="../Images/PizzaStore_Abstract_Factory_UML.png">
+
+What I have done?
+<img src="../Images/PizzaStore_Steps_UML.PNG">
+
+### Code Implementation
+
