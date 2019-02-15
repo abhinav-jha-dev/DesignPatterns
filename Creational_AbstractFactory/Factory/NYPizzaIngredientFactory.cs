@@ -11,27 +11,27 @@ namespace Creational_AbstractFactory.Factory
 
         public Clams CreateClam()
         {
-            throw new System.NotImplementedException();
+            return new FreshClams();
         }
 
         public Dough CreateDough()
         {
-            throw new System.NotImplementedException();
+            return new ThinCrustDough();
         }
 
         public Pepperoni CreatePepperoni()
         {
-            throw new System.NotImplementedException();
+            return new Pepperoni();
         }
 
         public Sauce CreateSauce()
         {
-            throw new System.NotImplementedException();
+            return new MarinaraSauce();
         }
 
         public Veggies[] CreateVeggies()
         {
-            throw new System.NotImplementedException();
+            return new Veggies[] { new GarlicVeggie(), new OnionVeggie() };
         }
     }
 }

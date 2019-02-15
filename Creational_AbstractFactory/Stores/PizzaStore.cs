@@ -4,6 +4,7 @@ namespace Creational_AbstractFactory.Stores
 {
     public abstract class PizzaStore
     {
+        public string cutStyle = "diagonal";
         public Pizza OrderPizza(string type)
         {
             Pizza pizza;
@@ -11,7 +12,7 @@ namespace Creational_AbstractFactory.Stores
 
             pizza.prepare();
             pizza.bake();
-            pizza.cut();
+            pizza.cut(cutStyle);
             pizza.box();
 
             return pizza;

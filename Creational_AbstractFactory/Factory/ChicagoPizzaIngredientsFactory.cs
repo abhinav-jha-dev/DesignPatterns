@@ -6,32 +6,32 @@ namespace Creational_AbstractFactory.Factory
     {
         public Cheese CreateCheese()
         {
-            throw new System.NotImplementedException();
+            return new ReggianoCheese();
         }
 
         public Clams CreateClam()
         {
-            throw new System.NotImplementedException();
+            return new FrozenClams();
         }
 
         public Dough CreateDough()
         {
-            throw new System.NotImplementedException();
+            return new ThickCrustDough();
         }
 
         public Pepperoni CreatePepperoni()
         {
-            throw new System.NotImplementedException();
+            return new Pepperoni();
         }
 
         public Sauce CreateSauce()
         {
-            throw new System.NotImplementedException();
+            return new PlumTomatoSauce();
         }
 
         public Veggies[] CreateVeggies()
         {
-            throw new System.NotImplementedException();
+            return new Veggies[] { new EggPlantVeggie(), new OnionVeggie(), new GarlicVeggie() };
         }
     }
 }
