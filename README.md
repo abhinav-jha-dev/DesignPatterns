@@ -77,8 +77,8 @@ Before writing code you should create UML diagram of your application flow by us
 
 Please post your FAQ or comments regarding design patterns [as an issue](https://github.com/abhinav2127/DesignPattern_CSharp/issues) profile so that we can discuss them later.
 
-[1]: Creational_FactoryMethod/README.md
-[2]: Creational_AbstractFactory/README.md
+[1]: FactoryMethod/README.md
+[2]: AbstractFactory/README.md
 
 ## License
 

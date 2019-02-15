@@ -89,4 +89,4 @@ Hurray! My pizza store is looking great now and I am getting a lot of profit fro
 
 Now, my store is going popular and I want to start franchises in the next town to increase my profit. I will update my current architecture with `Factory Method Pattern` and introduce the cost calculator to calculate pizza cost based on item used. To understand how I have expended my store app follow my next design pattern.
 
-[Factory Method Pattern](../Creational_FactoryMethod/README.md)
+[Factory Method Pattern](../FactoryMethod/README.md)

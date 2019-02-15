@@ -1,7 +1,7 @@
-Creational_AbstractFactory/bin
-Creational_AbstractFactory/obj
-Creational_FactoryMethod/bin
-Creational_FactoryMethod/obj
+Creational_Patterns/AbstractFactory/bin
+Creational_Patterns/AbstractFactory/obj
+Creational_Patterns/FactoryMethod/bin
+Creational_Patterns/FactoryMethod/obj
 SimpleFactory/bin
 SimpleFactory/obj
 .vscode
