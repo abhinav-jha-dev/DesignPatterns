@@ -2,6 +2,14 @@ Creational_Patterns/AbstractFactory/bin
 Creational_Patterns/AbstractFactory/obj
 Creational_Patterns/FactoryMethod/bin
 Creational_Patterns/FactoryMethod/obj
+Creational_Patterns/Builder/bin
+Creational_Patterns/Builder/obj
+Creational_Patterns/ObjectPool/bin
+Creational_Patterns/ObjectPool/obj
+Creational_Patterns/Prototype/bin
+Creational_Patterns/Prototype/obj
+Creational_Patterns/Singleton/bin
+Creational_Patterns/Singleton/obj
 SimpleFactory/bin
 SimpleFactory/obj
 .vscode
