@@ -1,8 +1,8 @@
 # Creational - Factory Method Pattern
 Factory method pattern encapsulates object creation by letting subclasses decide what object to create. Here is the class diagram showing how this pattern works:
 
-<img src="../Images/Creator_Class_Factory_Method_UML.PNG" data-canonical-src="../Images/Creator_Class_Factory_Method_UML.PNG"/>
-<img src="../Images/Product_Class_Factory_Method_UML.PNG" data-canonical-src="../Images/Product_Class_Factory_Method_UML.PNG"/>
+<img src="../../Images/Creator_Class_Factory_Method_UML.PNG" data-canonical-src="../Images/Creator_Class_Factory_Method_UML.PNG"/>
+<img src="../../Images/Product_Class_Factory_Method_UML.PNG" data-canonical-src="../Images/Product_Class_Factory_Method_UML.PNG"/>
 
 > This self explanatory UML diagram is the example stated in [Head First Design Pattern](https://www.amazon.in/Head-First-Design-Patterns-Brain-Friendly/dp/9352132777/ref=sr_1_1?s=books&ie=UTF8&qid=1548777791&sr=1-1&keywords=head+first+design+patterns).
 
@@ -174,4 +174,4 @@ Hurray! My pizza franchises are thanking me for this great effort that I have pu
 
 Now, my stores is going popular and I will look for `Abstract Factory Pattern` to make implement some more compatibility with my Pizza Store.
 
-[Abstract Factory Pattern](../AbstractFactory/README.md)
+[Abstract Factory Pattern](../../AbstractFactory/README.md)
