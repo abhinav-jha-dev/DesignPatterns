@@ -10,6 +10,8 @@ Creational_Patterns/Prototype/bin
 Creational_Patterns/Prototype/obj
 Creational_Patterns/Singleton/bin
 Creational_Patterns/Singleton/obj
+Behavioral_Patterns/Strategy/bin
+Behavioral_Patterns/Strategy/obj
 SimpleFactory/bin
 SimpleFactory/obj
 .vscode
