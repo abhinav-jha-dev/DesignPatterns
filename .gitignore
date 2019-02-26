@@ -12,6 +12,8 @@ Creational_Patterns/Singleton/bin
 Creational_Patterns/Singleton/obj
 Behavioral_Patterns/Strategy/bin
 Behavioral_Patterns/Strategy/obj
+Behavioral_Patterns/Observer/bin
+Behavioral_Patterns/Observer/obj
 SimpleFactory/bin
 SimpleFactory/obj
 .vscode
