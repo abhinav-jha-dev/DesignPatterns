@@ -8,7 +8,7 @@
 - Co-opt one instance of a class for use as a breeder of all future instances.
 - The `new` operator considered harmful.
 
-## How to use it?
+## Components
 
 There are three actors while implementing prototype pattern:
 
